@@ -150,7 +150,11 @@ class Search_hilite
 						}
 						else
 						{
-							$search_id = substr($this->EE->uri->query_string, 0, 32);
+							// We want to highlight the term when we click through from an EE search result, so we need to look at the referral last segment, not the current URL segment - @electriclabs - Rob Hodges 09/02/2012
+							// Explode the referral URL
+							$search_id = explode('/', $ref);
+							// Grab the search ID from the referral URL and continue
+							$search_id = ($search_id[count($search_id)-2]);
 						}
         				
 						$this->EE->db->select('keywords');
