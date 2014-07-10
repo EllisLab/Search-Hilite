@@ -32,39 +32,19 @@ Create a welcome message for incoming search engine users:
 This message will only display if a Search Engine referrer is available
 and search terms are found in the referrer URL.
 
-******************
-VERSION 1.1
+## Change Log
 
-- Added the {search_words} varible.
-- Added ExpressionEngine's search support
-- Caching of search words by search engine possible. Disabled by default. To enable, go into
-the plugin file and set the class variable $write_cache to 'y'. There will now be a file
-created for each search engine in a newly create /system/cache/search_hilite/ directory. Inside
-each file will be the search words and the time when the page was loaded for those terms.
-The file for a specific search engine will not be created until a search comes in from that
-search engine.
-
-******************
-VERSION 1.2
-
-- Fixed a bug when there is a quote used in the original search engine's search.
-
-******************
-VERSION 1.2.1
-
-- Made plugin compatible with PHP 4.4 and above
-
-******************
-VERSION 1.2.2
-
-- Fixed a bug to allow for the search term to be highlighted multiple times within xhtml under most circumstances.
-
-******************
-VERSION 1.3
-
-- Updated plugin to be 2.0 compatible.
-
-******************
-VERSION 1.3.1
-
-- Fixed a PHP error.
+- Version 1.1
+    - Added the {search_words} varible.
+    - Added ExpressionEngine's search support
+    - Caching of search words by search engine possible. Disabled by default. To enable, go into the plugin file and set the class variable `$write_cache` to `'y'`. There will now be a file created for each search engine in a newly create `/system/cache/search_hilite/` directory. Inside each file will be the search words and the time when the page was loaded for those terms. The file for a specific search engine will not be created until a search comes in from that search engine.
+- Version 1.2
+    - Fixed a bug when there is a quote used in the original search engine's search.
+- Version 1.2.1
+    - Made plugin compatible with PHP 4.4 and above
+- Version 1.2.2
+    - Fixed a bug to allow for the search term to be highlighted multiple times within xhtml under most circumstances.
+- Version 1.3
+    - Updated plugin to be 2.0 compatible.
+- Version 1.3.1
+    - Fixed a PHP error.
