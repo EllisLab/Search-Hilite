@@ -59,6 +59,11 @@ This message will only display if a Search Engine referrer is available and sear
 
 ## Change Log
 
+### 2.1
+
+- Fixed PHP 7 error
+- Updated license and author information
+
 ### 2.0
 
 - Updated plugin to be 3.0 compatible.
