@@ -90,6 +90,6 @@ This message will only display if a Search Engine referrer is available and sear
 
 ### 1.1
 
-- Added the {search_words} varible.
+- Added the {search_words} variable.
 - Added ExpressionEngine's search support
 - Caching of search words by search engine possible. Disabled by default. To enable, go into the plugin file and set the class variable `$write_cache` to `'y'`. There will now be a file created for each search engine in a newly create `/system/cache/search_hilite/` directory. Inside each file will be the search words and the time when the page was loaded for those terms. The file for a specific search engine will not be created until a search comes in from that search engine.
